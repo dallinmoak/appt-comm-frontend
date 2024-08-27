@@ -1,7 +1,7 @@
 {
   "name": "Appointment Communication Generator PWA",
   "id": "appt-comm-gen",
-  "start_url": "../../",
+  "start_url": "https://appt-comm-frontend.vercel.app/",
   "background_color": "#606060",
   "display": "minimal-ui",
   "theme_color": "#608080",
