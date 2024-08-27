@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000");
+        const response = await fetch(import.meta.env.VITE_BACKEND_URL);
         const data = await response.text();
         setMessage(data);
       } catch (e) {
