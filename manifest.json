@@ -1,9 +1,15 @@
 {
+  "name": "Appointment Communication Generator PWA",
+  "id": "appt-comm-gen",
+  "start_url": "#pwa",
+  "background_color": "#606060",
+  "display": "minimal-ui",
+  "theme_color": "#608080",
   "icons": [
     {
       "src": "favicon.svg",
       "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
-      "type: "image/svg+xml",
+      "type": "image/svg+xml",
       "purpose": "any"
     },
     {
