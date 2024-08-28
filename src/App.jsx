@@ -7,8 +7,8 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await fetch(import.meta.env.VITE_BACKEND_URL);
-        const data = await response.text();
-        setMessage(data);
+        const data = await response.json();
+        setMessage(data.map((d) => d.name).join(", "));
       } catch (e) {
         setError(e.message);
         console.error(e);
