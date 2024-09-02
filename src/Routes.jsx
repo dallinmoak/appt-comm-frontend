@@ -7,9 +7,7 @@ import { createRoutesFromElements, Route } from "react-router-dom";
 import getTypeDetails from "./getTypeDetails.js";
 
 const typesLoader = async ({ params }) => {
-  console.log("params", params);
-  const types = await getTypeDetails(params.id);
-  return types;
+  return await getTypeDetails(params.id);
 };
 
 const myRoutes = createRoutesFromElements(

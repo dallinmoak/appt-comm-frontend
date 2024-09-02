@@ -10,8 +10,8 @@ export default function TypePage() {
       {type?.templates.map((template) => {
         return (
           <li key={template._id}>
-            <h2>{template.name}</h2>
-            <p>{template.body.substring(0, 15) + "..."}</p>
+            <h3>{template.name}</h3>
+            <p>{template.body.substring(0, 50) + "..."}</p>
           </li>
         );
       })}
