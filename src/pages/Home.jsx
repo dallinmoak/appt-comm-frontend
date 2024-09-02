@@ -3,7 +3,7 @@ import CommType from "../components/Type";
 
 export default function Home() {
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchTypes = async () => {
       try {
         const response = await fetch(import.meta.env.VITE_BACKEND_URL);
         const data = await response.json();
@@ -15,7 +15,7 @@ export default function Home() {
         setLoading(false);
       }
     };
-    fetchData();
+    fetchTypes();
   }, []);
 
   const [types, setTypes] = useState(null);
