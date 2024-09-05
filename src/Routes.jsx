@@ -15,7 +15,7 @@ const myRoutes = createRoutesFromElements(
     <Route index element={<Home />} />
     <Route path='about' element={<About />} />
     <Route path='/types/:id' loader={typesLoader} element={<TypePage />} />
-    <Route path='/communications/:id' element={<h1>communication</h1>} />
+    <Route path='/templates/:id' element={<h1>template</h1>} />
   </Route>
 );
 
