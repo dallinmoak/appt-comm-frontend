@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 
 export default function TypePage() {
@@ -10,8 +11,10 @@ export default function TypePage() {
       {type?.templates.map((template) => {
         return (
           <li key={template._id}>
-            <h3>{template.name}</h3>
-            <p>{template.body.substring(0, 50) + "..."}</p>
+            <Link to={`/templates/${template._id}`}>
+              <h3>{template.name}</h3>
+              <p>{template.body.substring(0, 50) + "..."}</p>
+            </Link>
           </li>
         );
       })}
